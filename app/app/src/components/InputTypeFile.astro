@@ -1,8 +1,16 @@
-<div class="flex items-center justify-center mt-20 w-80 h-80">
-    <input
-      class=" text-white"
-      type="file"
-      id="picture"
-    />
-  </div>
-  
+<div id="dropArea" class=" mt-12">
+  <p>Drag and drop a RAM file here, or click to select one.</p>
+  <input type="file" id="fileInput" style="display: none;" />
+  <button id="process-file-button">Process File</button>
+</div>
+
+<style>
+  #dropArea {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  #dropArea.highlight {
+    background-color: #f0f0f0;
+  }
+</style>
