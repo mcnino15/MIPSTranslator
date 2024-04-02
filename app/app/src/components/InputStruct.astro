@@ -6,6 +6,7 @@ import BugButton from "./BugButton.astro";
 import Tabla from "./Tabla.astro";
 import RegisterTable from "./RegisterTable.astro";
 import InstructionTexbox from "./InstructionTexbox.astro";
+import InstructionButton from "./InstructionButton.astro";
 ---
 
 <section class="py-8 px-4 mx-auto max-w-xl flex justify-center flex-col">
@@ -15,6 +16,7 @@ import InstructionTexbox from "./InstructionTexbox.astro";
   </div>
   <div class="flex justify-around flex-row w-full text-center">
     <InstructionTexbox />
+    <InstructionButton texto="Execute" />
   </div>
   <div class="py-8 px-4 flex justify-around flex-row w-full text-center">
     <BugButton texto="Bug"/>
