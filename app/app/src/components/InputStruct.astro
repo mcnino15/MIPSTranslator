@@ -2,25 +2,30 @@
 import ButtonStar from "./ButtonStar.astro";
 import InputTypeFile from "./InputTypeFile.astro";
 import DegratedButton from "./DegratedButton.astro";
-import BugButton from "./BugButton.astro";
-import Tabla from "./Tabla.astro";
+import BugButton from "./DebugButton.astro";
+import Tabla from "./RamTable.astro";
 import RegisterTable from "./RegisterTable.astro";
 import InstructionTexbox from "./InstructionTexbox.astro";
 import InstructionButton from "./InstructionButton.astro";
+import DebugButton from "./DebugButton.astro";
+import RamTable from "./RamTable.astro";
 ---
 
+<RamTable id="ramTable"/>
+<RegisterTable id="registerTable"/> 
+
 <section class="py-8 px-4 mx-auto max-w-xl flex justify-center flex-col">
-  <div class="flex justify-around flex-row w-full text-center">
-    <ButtonStar texto="MIPS to HEX" id="mips-to-hex-button"/>
-    <ButtonStar texto="HEX to MIPS" id="hex-to-mips-button" />
-  </div>
-  <div class="flex justify-around flex-row w-full items-center gap-8 text-center">
-    <InstructionTexbox />
-    <InstructionButton texto="Execute" id="explain-button" />
-  </div>
-  <div class="py-8 px-4 flex justify-around flex-row w-full text-center">
-    <BugButton texto="Bug" id="start-debug">
-  </div>
+    <div class="flex justify-around flex-row w-full text-center">
+      <ButtonStar texto="MIPS to HEX" id="mips-to-hex-button"/>
+      <ButtonStar texto="HEX to MIPS" id="hex-to-mips-button" />
+    </div>
+    <div class="flex justify-around flex-row w-full items-center gap-8 text-center">
+      <InstructionTexbox id="instruction-explanation-input" />
+      <InstructionButton texto="Execute" id="explain-button" />
+    </div>
+    <div class="py-8 px-4 flex justify-around flex-row w-full text-center">
+      <DebugButton id="start-debug">
+    </div>
   <div class="flex w-full justify-around mt-15">
     <DegratedButton texto="Save to RAM" id="save-to-ram-button">
       <svg
@@ -76,8 +81,5 @@ import InstructionButton from "./InstructionButton.astro";
     </DegratedButton>
   </div >
   <InputTypeFile />
-  <div class=" py-8 px-4 flex justify-around flex-row w-full " >
-    <Tabla />
-    <RegisterTable />
-  </div>
+  
 </section>

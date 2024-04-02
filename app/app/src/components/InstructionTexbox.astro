@@ -1,6 +1,12 @@
 
-    <div>
-      <textarea class="container" placeholder="Instruction to be explain..."></textarea>
+---
+interface Props{
+  id: string;
+}
+const {id} = Astro.props;
+---
+  <div>
+      <textarea class="container" placeholder="Instruction to be explain..." id={id}></textarea>
     </div>
 
   <style>
