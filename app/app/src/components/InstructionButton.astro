@@ -1,10 +1,11 @@
 ---
 interface Props {
 	texto: string;
+  id: string;
 }
-const { texto } = Astro.props;
+const { texto, id } = Astro.props;
 ---
-<button>
+<button id={id}>
     Execute
 </button>
 <style>

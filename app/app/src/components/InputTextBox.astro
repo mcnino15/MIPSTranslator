@@ -1,5 +1,11 @@
+---
+interface Props{
+  id: string;
+}
+const {id} = Astro.props;
+---
 <div>
-    <textarea class="container" placeholder="Enter MIPS nstruction here..."/>
+    <textarea class="container" placeholder="Enter MIPS instruction here..." id={id}/>
     
 </div>
   

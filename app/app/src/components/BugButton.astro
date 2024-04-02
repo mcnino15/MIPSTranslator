@@ -1,10 +1,11 @@
 ---
 interface Props {
   texto: string;
+  id: string;
 }
-const { texto } = Astro.props;
+const { texto, id } = Astro.props;
 ---
-<button class="Btn">
+<button class="Btn" id={id} >
     <span class="text">Bug</span>
     <span class="svgIcon">
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAptJREFUSEudVotVwzAMPG3ABnQENgAmoZs02aSdhLIBI5QN2CD4I9unyE5T/B4lL7H1Od3JEgGwtB/0Fn9Oz2mTPrUX3Vdsz9jhc82eQLBYB2phFKiz4zzaF3F/jbR92jTTRcWdvROJOOg4M+CA/BeDuyoE1rF38Kb7b1hw60cZEd1agikgfqJYhrvJf6YAMIdop8SITj0N1I5jzvGeEsii9JuD92lUPoK6ExhD3YycIThb2OUILEd1Mml4EeYB1NnX3kUQxkyY+Smzk0I64I1Fixx3YWzkAj4Vk0vJmE7EbD9yBvKuUD+YsfWfM6G1p8qNXBs1HuGsDv7huHa0OfAg17sTrYc6b7pqQBHqZ31+1/8VVrJ3CXo/6/dPdfaDRW4Ke9Z2XUXHPiIfZOJS+pmCXgz8WbMVVjpbDTsSk47lACy5SyUiuZX2hp8HHFcbBa1KOI6EJbGCJV0YZa/WnWGSOUA6qZzo8nJQKjICbiCGSCP2NrJ4XRaPo5uNS8Jij311XTvmg6Nnn7GV1T06zwGV2P9N5xpm/IB2V8TgINIndWxvJ3b8pUcOgDyXmWOk+cHo8UO9+nXdVDLU2Qs7LiXY3UAM1bLN1kBa5FV2ntU5tCKz3fcxoWEuEw1odcE0B6uMRRIz/3Uf1w7ZBoF7GQtwUthJs3LSc93uYybOnPYg45R7V8dHAY56qvTW2JfzBZ+yryz9xSLfisoLFjwR1GXqiL279O+rElDf9WYuJ85Km5JJ9PEFoAQXjb62RGuZ+uOWRmjgu6NXntpWjlHkEqEJFSsxdiyStK08RxkL3mjO+gXwrQdfAAP1tSMt1wocYYZNwjWhcTvZ86XodRMdNnS/fY4uD55iNwb6dtxMk6295KGAiN5vrA52zeIPhiMiOA0WA9UAAAAASUVORK5CYII="/>

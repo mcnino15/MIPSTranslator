@@ -11,18 +11,18 @@ import InstructionButton from "./InstructionButton.astro";
 
 <section class="py-8 px-4 mx-auto max-w-xl flex justify-center flex-col">
   <div class="flex justify-around flex-row w-full text-center">
-    <ButtonStar texto="MIPS to HEX" />
-    <ButtonStar texto="HEX to MIPS" />
+    <ButtonStar texto="MIPS to HEX" id="mips-to-hex-button"/>
+    <ButtonStar texto="HEX to MIPS" id="hex-to-mips-button" />
   </div>
   <div class="flex justify-around flex-row w-full items-center gap-8 text-center">
     <InstructionTexbox />
-    <InstructionButton texto="Execute" />
+    <InstructionButton texto="Execute" id="explain-button" />
   </div>
   <div class="py-8 px-4 flex justify-around flex-row w-full text-center">
-    <BugButton texto="Bug"/>
+    <BugButton texto="Bug" id="start-debug">
   </div>
   <div class="flex w-full justify-around mt-15">
-    <DegratedButton texto="Save to RAM">
+    <DegratedButton texto="Save to RAM" id="save-to-ram-button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="ionicon mr-2"
@@ -38,7 +38,7 @@ import InstructionButton from "./InstructionButton.astro";
           stroke-width="32"></path></svg
       >
     </DegratedButton>
-    <DegratedButton texto="Simulate">
+    <DegratedButton texto="Simulate" id="simulate-mips-button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="ionicon mr-2"
